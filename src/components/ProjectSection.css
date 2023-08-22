@@ -1,19 +1,23 @@
-.image-carousel {
+.project-heading {
+  font-size: 50px;
+}
+
+.slide {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 2rem;
 }
 
-.carousel-image {
+.project-image {
   max-width: 100%;
-  height: auto;
+  height: 500px;
+  object-fit: cover;
 }
 
-.carousel-button {
-  background-color: #3498db;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
+.project-caption {
+  margin: 0;
+  font-size: 18px;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

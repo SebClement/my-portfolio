@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import Image1 from "../Pictures/Hangin1.jpg";
 import Image2 from "../Pictures/NyanCAT.jpg";
 import Image3 from "../Pictures/Screen Shot 2023-08-19 at 11.16.23 AM.png";
+import "../components/ProjectSection.css";
 
 function Arrow(props) {
   const { className, style, onClick } = props;
@@ -43,18 +44,18 @@ const ProjectSection = () => {
 
   return (
     <div className="container">
-      <h2>Projects</h2>
+      <h2 className="project-heading">Projects</h2>
       <Slider {...settings}>
         <div className="slide">
-          <img src={Image1} alt="Project 1" />
-          <p>Hang In</p>
+          <img src={Image1} alt="Project 1" className="project-image" />
+          <p className="project-caption">Hang In</p>
         </div>
         <div className="slide">
-          <img src={Image2} alt="Project 2" />
-          <p>Nyan Cat</p>
+          <img src={Image2} alt="Project 2" className="project-image" />
+          <p className="project-caption">Nyan Cat</p>
         </div>
         <div className="slide">
-          <img src={Image3} alt="Project 3" />
+          <img src={Image3} alt="Project 3" className="project-image" />
         </div>
       </Slider>
     </div>
