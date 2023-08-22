@@ -63,14 +63,38 @@ const Page = () => {
       <div ref={AboutMeSectionRef}>
         <About />
       </div>
-      <div ref={ProjectSectionRef}>
+      <div ref={ProjectSectionRef} style={{ margin: "50px 0" }}>
         <Projects />
       </div>
       <div ref={ContactSectionRef}>
         <ContactSection />
       </div>
 
-      <button onClick={handleScrollToTop}>Scroll to Top</button>
+      <button
+        onClick={handleScrollToTop}
+        style={{
+          position: "fixed",
+          bottom: "20px",
+          right: "20px",
+          background: "#007bff",
+          color: "white",
+          padding: "10px 20px",
+          borderRadius: "5px",
+          border: "none",
+          cursor: "pointer",
+          fontSize: "16px",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        Scroll to Top{" "}
+        <span
+          style={{
+            marginLeft: "5px",
+            transform: "rotate(-90deg)",
+          }}
+        ></span>
+      </button>
     </div>
   );
 };
