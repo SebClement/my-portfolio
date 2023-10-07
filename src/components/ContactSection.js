@@ -14,7 +14,6 @@ const ContactSection = () => {
     const value = e.target.value;
     setData({ ...data, [name]: value });
   };
-
   const hanldeSubmit = (e) => {
     e.preventDefault();
     alert(data);
